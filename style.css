@@ -1,5 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
 :root {
-	--background-color: blue;
+	--background-color: white;
+	--dark-blue: hsl(215, 78%, 27%);
+	--table-bg: rgb(247, 247, 247);
+	--font-family: "Poppins", sans-serif;
 }
 
 * {
@@ -8,8 +13,53 @@
 	box-sizing: border-box;
 }
 
+body {
+	font-family: var(--font-family);
+	background-color: var(--background-color);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.1);
+	padding: 5rem;
+	border-radius: 1rem;
+}
+
+h1,
+h2 {
+	color: var(--dark-blue);
+	padding: 1rem 0rem 1rem 0rem;
+}
+
 img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1rem;
 	height: 200px;
 	width: 200px;
 	border-radius: 50%;
+}
+
+.table {
+	border: 1px solid var(--title-bg);
+	padding: 1rem;
+	background-color: var(--table-bg);
+}
+
+th {
+	text-align: left;
+}
+
+td {
+	padding: 0rem 2rem 0rem 0rem;
+}
+
+.link {
+	padding: 1rem 0rem 0rem 0rem;
+	display: inline-flex;
+}
+
+.second-li {
+	padding: 0rem 0rem 0rem 1rem;
 }
